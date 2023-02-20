@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    Questions[] questions= null;
-    public Questions[] Questions { get { return questions; } }
+    Question[] _questions= null;
+    public Question[] Questions { get { return _questions; } }
 
     [SerializeField] GameEvents events = null;
 
-    private List<AnswerData> PickAnswers = List<AnswerData>();
+    private List<AnswerData> PickedAnswers = new List<AnswerData>();
     private List<int> FinishedQuestions = new List<int>();
     private int currentQuestion = 0;
 
     void Start ()
     {
         LoadQuestions();
-        foreach (var question.Info)
+        foreach (var question in Questions)
         {
             Debug.Log(question.Info);
         }
@@ -66,8 +66,8 @@ public class GameManager : MonoBehaviour
 
     void LoadQuestions ()
     {
-        Object[] objs = Resources.loadAll("Questions", typeof(Question));
-        _questions = new Question[ogjs.Length];
+        Object[] objs = Resources.LoadAll("Questions", typeof(Question));
+        _questions = new Question[objs.Length];
         for (int i = 0; i < objs.Length; i++)
         {
             _questions[i] = (Question)objs[i];
