@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac938ef62e29b742909d9b9675202c4, type: 3}
   m_Name: New Question
   m_EditorClassIdentifier: 
-  _info: 
+  _info: "\u0421\u0435\u0440\u044B\u0439 Team-Leader?"
   _answers:
-  - _info: 
+  - _info: "\u0414\u0430"
     _isCorrect: 0
-  - _info: 
-    _isCorrect: 0
+  - _info: "\u041D\u0435\u0442"
+    _isCorrect: 1
   _answerType: 0
   _addScore: 10

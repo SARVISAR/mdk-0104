@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class AnswerData : MonoBehaviour
 {
     [Header("UI Elements")]
-    [SerializeField] TextMeshProUGUI infoTextObjects;
+    [SerializeField] TextMeshProUGUI infoTextObject;
     [SerializeField] Image toggle;
 
     [Header("Textures")]
@@ -35,7 +35,7 @@ public class AnswerData : MonoBehaviour
 
     public void UpdateData(string info, int index)
     {
-        infoTextObjects.text = info;
+        infoTextObject.text = info;
         _answerIndex = index;
     }
     public void Reset()

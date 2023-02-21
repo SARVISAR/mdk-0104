@@ -4,14 +4,14 @@ using UnityEngine;
 using System;
 using TMPro;
 
-[SerializeField()]
+[Serializable()]
 public struct UIManagerParameters
 {
     [Header("Answers Options")]
     [SerializeField] float margins;
     public float Margins { get { return margins; } }
 }
-[SerializeField()]
+[Serializable()]
 public struct UIElements 
 {
     [SerializeField] RectTransform answersContentArea;
