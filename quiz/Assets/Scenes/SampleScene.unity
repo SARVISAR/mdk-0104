@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 46012511}
   - component: {fileID: 46012510}
   - component: {fileID: 46012509}
+  - component: {fileID: 46012512}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -224,6 +225,26 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!95 &46012512
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46012507}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cb12a9506ff29cd4e82b3ddcb298ab11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &68749474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1155,7 @@ MonoBehaviour:
     questionInfoTextObject: {fileID: 2001856973}
     scoreText: {fileID: 0}
     resolutionScreenAnimator: {fileID: 0}
+    resolutionBG: {fileID: 0}
     resolutionStateInfoText: {fileID: 0}
     resolutionScoreText: {fileID: 0}
     highScoreText: {fileID: 0}
@@ -1141,6 +1163,9 @@ MonoBehaviour:
     finishUIElements: {fileID: 0}
   parameters:
     margins: 15
+    correctBGColor: {r: 0.08006046, g: 0.990566, b: 0, a: 0}
+    incorrectBGColor: {r: 1, g: 0, b: 0, a: 0}
+    finalBGColor: {r: 0, g: 0.12585449, b: 1, a: 0}
 --- !u!114 &598545267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1191,7 @@ GameObject:
   - component: {fileID: 655674071}
   - component: {fileID: 655674070}
   - component: {fileID: 655674069}
+  - component: {fileID: 655674072}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -1237,7 +1263,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1508583376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 598545267}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Accept
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &655674070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,6 +1314,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655674067}
   m_CullTransparentMesh: 1
+--- !u!114 &655674072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655674067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94c3a9219aa18041aa7f52bca3b1d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoTextObject: {fileID: 0}
+  toggle: {fileID: 0}
+  uncheckedToggle: {fileID: 0}
+  checkedToggle: {fileID: 0}
+  events: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

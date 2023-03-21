@@ -18,5 +18,5 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: "\u041D\u0435\u0442"
     _isCorrect: 1
-  _answerType: 0
+  _answerType: 1
   _addScore: 10

@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
 
     public void Accept()
     {
-        UpdateTimer(false);
+        //UpdateTimer(false);
         bool isCorrect = CheckAnswers();
         FinishedQuestions.Add(currentQuestion);
 
@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
             events.DisplayResolutionScreen(type, Questions[currentQuestion].AddScore);
         }
 
-        AudioManager.Instance.PlaySound((isCorrect) ? "CorrectSFX" : "IncorrectSFX");
+        //AudioManager.Instance.PlaySound((isCorrect) ? "CorrectSFX" : "IncorrectSFX");
 
         if (type != UIManager.ResolutionScreenType.Finish)
         {
@@ -129,6 +129,52 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /*void UpdateTimer(bool state)
+    {
+        switch (state)
+        {
+            case true:
+                IE_StartTimer = StartTimer();
+                StartCoroutine(IE_StartTimer);
+
+                timerAnimtor.SetInteger(timerStateParaHash, 2);
+                break;
+            case false:
+                if (IE_StartTimer != null)
+                {
+                    StopCoroutine(IE_StartTimer);
+                }
+
+                timerAnimtor.SetInteger(timerStateParaHash, 1);
+                break;
+        }
+    }
+    IEnumerator StartTimer()
+    {
+        var totalTime = Questions[currentQuestion].Timer;
+        var timeLeft = totalTime;
+
+        timerText.color = timerDefaultColor;
+        while (timeLeft > 0)
+        {
+            timeLeft--;
+
+            AudioManager.Instance.PlaySound("CountdownSFX");
+
+            if (timeLeft < totalTime / 2 && timeLeft > totalTime / 4)
+            {
+                timerText.color = timerHalfWayOutColor;
+            }
+            if (timeLeft < totalTime / 4)
+            {
+                timerText.color = timerAlmostOutColor;
+            }
+
+            timerText.text = timeLeft.ToString();
+            yield return new WaitForSeconds(1.0f);
+        }
+        Accept();
+    }*/
     IEnumerator WaitTillNextRound()
     {
         yield return new WaitForSeconds(GameUtility.ResolutionDelayTime);
@@ -136,25 +182,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-    Question GetRandomQuestion ()
-    {
-        var randomIndex = GetRandomQuestionIndex();
-        currentQuestion= randomIndex;
-
-        return Questions[currentQuestion];
-    }
-    int GetRandomQuestionIndex ()
-    {
-        var random = 0;
-        if (FinishedQuestions.Count < Questions.Length)
-        {
-            do
-            {
-                random = UnityEngine.Random.Range(0, Questions.Length);
-            }while(FinishedQuestions.Contains(random) || random == currentQuestion);
-        }
-        return random;
-    }
 
     bool CheckAnswers()
     {
@@ -180,6 +207,11 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    /*public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }*/
+
     void LoadQuestions ()
     {
         Object[] objs = Resources.LoadAll("Questions", typeof(Question));
@@ -187,6 +219,20 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < objs.Length; i++)
         {
             _questions[i] = (Question)objs[i];
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    private void SetHighscore()
+    {
+        var highscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+        if (highscore < events.CurrentFinalScore)
+        {
+            PlayerPrefs.SetInt(GameUtility.SavePrefKey, events.CurrentFinalScore);
         }
     }
 
@@ -199,4 +245,25 @@ public class GameManager : MonoBehaviour
             events.ScoreUpdated();
         }
     }
+
+    Question GetRandomQuestion()
+    {
+        var randomIndex = GetRandomQuestionIndex();
+        currentQuestion = randomIndex;
+
+        return Questions[currentQuestion];
+    }
+    int GetRandomQuestionIndex()
+    {
+        var random = 0;
+        if (FinishedQuestions.Count < Questions.Length)
+        {
+            do
+            {
+                random = UnityEngine.Random.Range(0, Questions.Length);
+            } while (FinishedQuestions.Contains(random) || random == currentQuestion);
+        }
+        return random;
+    }
+
 }

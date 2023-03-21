@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using System;
 using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 [Serializable()]
 public struct UIManagerParameters
@@ -19,6 +20,7 @@ public struct UIManagerParameters
     [SerializeField] Color finalBGColor;
     public Color FinalBGColor { get { return finalBGColor; } }
 }
+
 [Serializable()]
 public struct UIElements
 {
@@ -58,30 +60,36 @@ public struct UIElements
 }
 public class UIManager : MonoBehaviour
 {
-        
-    public enum ResolutionScreenType { Correct, Incorrec, Finish }
+
+    public enum ResolutionScreenType { Correct, Incorrect, Finish }
 
     [Header("References")]
-    [SerializeField] GameEvents events;
+    [SerializeField] GameEvents events = null;
 
     [Header("UI Elements (Prefabs)")]
-    [SerializeField] AnswerData answerPrefab;
+    [SerializeField] AnswerData answerPrefab = null;
 
-    [SerializeField] UIElements uIElements;
+    [SerializeField] UIElements uIElements = new UIElements();
 
     [Space]
-    [SerializeField] UIManagerParameters parameters;
+    [SerializeField] UIManagerParameters parameters = new UIManagerParameters();
 
+    private List<AnswerData> currentAnswers = new List<AnswerData>();
+    private int resStateParaHash = 0;
 
-    List<AnswerData> currentAnswer = new List<AnswerData>();
+    private IEnumerator IE_DisplayTimedResolution = null;
 
     void OnEnable()
     {
         events.UpdateQuestionUI += UpdateQuestionUI;
+        events.DisplayResolutionScreen += DisplayResolution;
+        events.ScoreUpdated += UpdateScoreUI;
     }
     void OnDisable() 
     {
         events.UpdateQuestionUI -= UpdateQuestionUI;
+        events.DisplayResolutionScreen -= DisplayResolution;
+        events.ScoreUpdated -= UpdateScoreUI;
     }
 
     void Start()
@@ -179,10 +187,14 @@ public class UIManager : MonoBehaviour
     }
     void EraseAnswers()
     {
-        foreach (var answer in currentAnswer)
+        foreach (var answer in currentAnswers)
         {
             Destroy(answer.gameObject);
         }
-        currentAnswer.Clear();
+        currentAnswers.Clear();
+    }
+    void UpdateScoreUI()
+    {
+        uIElements.ScoreText.text = "Score: " + events.CurrentFinalScore;
     }
 }
