@@ -1,0 +1,299 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 16328 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Jesus/Downloads/QuizGameProject-master/QuizGameProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63167
+Successfully changed project path to: C:/Users/Jesus/Downloads/QuizGameProject-master/QuizGameProject
+C:/Users/Jesus/Downloads/QuizGameProject-master/QuizGameProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16460] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 2952526527 [EditorId] 2952526527 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-L67RJFU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [16460] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 2952526527 [EditorId] 2952526527 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-L67RJFU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 103.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Jesus/Downloads/QuizGameProject-master/QuizGameProject/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   31.0.15.3129
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.023444 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 76.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.045 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1046ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (691ms)
+			LoadAssemblies (140ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (171ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (375ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (77ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (78ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.014181 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.819 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1820ms)
+		BeginReloadAssembly (207ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1374ms)
+			LoadAssemblies (178ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (308ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (751ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (159ms)
+				ProcessInitializeOnLoadAttributes (344ms)
+				ProcessInitializeOnLoadMethodAttributes (206ms)
+				AfterProcessingInitializeOnLoad (28ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (57.4 KB). Loaded Objects now: 2793.
+Memory consumption went from 93.2 MB to 93.1 MB.
+Total: 8.544800 ms (FindLiveObjects: 0.252300 ms CreateObjectMapping: 0.116600 ms MarkObjects: 8.048400 ms  DeleteObjects: 0.125500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 798749.582405 seconds.
+  path: Assets/Font/TMP/Roboto-Medium SDF.asset
+  artifactKey: Guid(ee269fa4cad37af4abde03e6205f595e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TMP/Roboto-Medium SDF.asset using Guid(ee269fa4cad37af4abde03e6205f595e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e9af0be73bdf1bb90bc832702a80ac') in 0.344657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-Bold.ttf
+  artifactKey: Guid(1d8ff08ed79c98b4faf76b6a0062101d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-Bold.ttf using Guid(1d8ff08ed79c98b4faf76b6a0062101d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '342f8a04cf5c143456de34cb0a241d94') in 3.368660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-BoldCondensed.ttf
+  artifactKey: Guid(f250daf72c67c1c4bb173633cfdb13b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-BoldCondensed.ttf using Guid(f250daf72c67c1c4bb173633cfdb13b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1bb0a43e41e1d0da817f7e5534a8561') in 0.193383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-BoldItalic.ttf
+  artifactKey: Guid(0c39ada610fe1cb489e8c5c9ccd76cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-BoldItalic.ttf using Guid(0c39ada610fe1cb489e8c5c9ccd76cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d0167a7b9158be463d8604c3319eaf') in 0.030017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-Medium.ttf
+  artifactKey: Guid(00aa5639217f039479ed3c18036effbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-Medium.ttf using Guid(00aa5639217f039479ed3c18036effbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2296badf8aec061a259cf4023d19218') in 0.035547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-Black.ttf
+  artifactKey: Guid(6124f7b17d9d39442b0d9d2007fec4c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-Black.ttf using Guid(6124f7b17d9d39442b0d9d2007fec4c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214190f1e9e0ea2c5090892c981c0789') in 0.064211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Font/TTF/Roboto
+  artifactKey: Guid(699816ec82591324eb4a2f79fd67080e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto using Guid(699816ec82591324eb4a2f79fd67080e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fcbb77fbbff062e65e79451d7ea800f') in 0.023862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-Italic.ttf
+  artifactKey: Guid(768b67df64bb4b44ca45426e8edb4d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-Italic.ttf using Guid(768b67df64bb4b44ca45426e8edb4d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186034e76917d51bfaacfa37718b2f2e') in 0.028546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-Regular.ttf
+  artifactKey: Guid(e71886c308ee90449be0cf5f1802b518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-Regular.ttf using Guid(e71886c308ee90449be0cf5f1802b518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b6c5e60611f84d09b8c7d04a48df042') in 0.035064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-ThinItalic.ttf
+  artifactKey: Guid(75228a0e52275b64e92d24ba0d38d6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-ThinItalic.ttf using Guid(75228a0e52275b64e92d24ba0d38d6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc01ac851871c2fe0b0a2c4d3e0998a2') in 0.029860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-BlackItalic.ttf
+  artifactKey: Guid(1da91fe548f20524ea72d07bdec70d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-BlackItalic.ttf using Guid(1da91fe548f20524ea72d07bdec70d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d1f720be3064ebe6a4df019cb89e28') in 0.028554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Font/TMP/Roboto-Medium SDF_DarkShadow.asset
+  artifactKey: Guid(3a65b9b691092d24f85cf54adcd3bd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TMP/Roboto-Medium SDF_DarkShadow.asset using Guid(3a65b9b691092d24f85cf54adcd3bd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d49d7ba4bc719bf5b7a4229007ad3e') in 0.045859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-Thin.ttf
+  artifactKey: Guid(9f647703e0d4b574bb7060f23c55c59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-Thin.ttf using Guid(9f647703e0d4b574bb7060f23c55c59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1552d9b0cfc9e986271a89c68e983aa0') in 0.024707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-CondensedItalic.ttf
+  artifactKey: Guid(eeb21fb0a5452454994fb135cac4141f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-CondensedItalic.ttf using Guid(eeb21fb0a5452454994fb135cac4141f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8a373d5c0feb6eb4cf966f842c6496') in 0.029411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Font/TMP/Roboto-Regular SDF.asset
+  artifactKey: Guid(e15d49e92d3fd3e45aedf10bdcb1f83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TMP/Roboto-Regular SDF.asset using Guid(e15d49e92d3fd3e45aedf10bdcb1f83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ef9ebdb277ba7232ee635dcb03719c') in 0.034869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-Light.ttf
+  artifactKey: Guid(eff4561ba23de464aaf248577b3d154f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-Light.ttf using Guid(eff4561ba23de464aaf248577b3d154f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00764e50228bc195017465aaf94163d7') in 0.023008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Font/TMP/Roboto-Light SDF.asset
+  artifactKey: Guid(95ceed32069b2dc4ab7ab011311b9079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TMP/Roboto-Light SDF.asset using Guid(95ceed32069b2dc4ab7ab011311b9079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad38b09902ee3473a213d21d6a54bc59') in 0.036990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-BoldCondensedItalic.ttf
+  artifactKey: Guid(dfcfba9e863dc6d4e928254d036dd798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-BoldCondensedItalic.ttf using Guid(dfcfba9e863dc6d4e928254d036dd798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2da568481ae70bda9eddfd8a1963b83') in 0.025124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-LightItalic.ttf
+  artifactKey: Guid(79be679b853700a45a1682060f344f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-LightItalic.ttf using Guid(79be679b853700a45a1682060f344f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9b9909ed0a0ae255f6d4dedb8794fa') in 0.025051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-Condensed.ttf
+  artifactKey: Guid(50057b3ab4c1cf143b2c5753ca540d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-Condensed.ttf using Guid(50057b3ab4c1cf143b2c5753ca540d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c6300cd81433cd3ee62c3dedbd71640') in 0.024257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Font/TTF/Roboto/Roboto-MediumItalic.ttf
+  artifactKey: Guid(bf9774cdb2c3a0643afc1dc7411c2055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF/Roboto/Roboto-MediumItalic.ttf using Guid(bf9774cdb2c3a0643afc1dc7411c2055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3974ef0ec25e74a9ed3f3fa9d04b507') in 0.023840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Font/TMP
+  artifactKey: Guid(398c21dccbb2552499572135fa3c82d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TMP using Guid(398c21dccbb2552499572135fa3c82d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebca4323737eb9117361bb1ae4534ec') in 0.012776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 272.763558 seconds.
+  path: Assets/Font/TTF
+  artifactKey: Guid(3c746c979d2ed894f880b63d104df6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/TTF using Guid(3c746c979d2ed894f880b63d104df6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c7dbef6f40651926a7b0d37bdf2137') in 0.019675 seconds 
