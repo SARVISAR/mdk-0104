@@ -83,9 +83,7 @@ public class GameManager : MonoBehaviour {
 
     #endregion
 
-    /// <summary>
-    /// Function that is called to update new selected answer.
-    /// </summary>
+    
     public void UpdateAnswers(AnswerData newAnswer)
     {
         if (Questions[currentQuestion].GetAnswerType == Question.AnswerType.Single)
@@ -114,17 +112,13 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    /// <summary>
-    /// Function that is called to clear PickedAnswers list.
-    /// </summary>
+   
     public void EraseAnswers()
     {
         PickedAnswers = new List<AnswerData>();
     }
 
-    /// <summary>
-    /// Function that is called to display new question.
-    /// </summary>
+    
     void Display()
     {
         EraseAnswers();
@@ -141,9 +135,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    /// <summary>
-    /// Function that is called to accept picked answers and check/display the result.
-    /// </summary>
+    
     public void Accept()
     {
         UpdateTimer(false);
@@ -237,9 +229,7 @@ public class GameManager : MonoBehaviour {
 
     #endregion
 
-    /// <summary>
-    /// Function that is called to check currently picked answers and return the result.
-    /// </summary>
+    
     bool CheckAnswers()
     {
         if (!CompareAnswers())
@@ -248,9 +238,7 @@ public class GameManager : MonoBehaviour {
         }
         return true;
     }
-    /// <summary>
-    /// Function that is called to compare picked answers with question correct answers.
-    /// </summary>
+    
     bool CompareAnswers()
     {
         if (PickedAnswers.Count > 0)
@@ -266,9 +254,7 @@ public class GameManager : MonoBehaviour {
         return false;
     }
 
-    /// <summary>
-    /// Function that is called to load all questions from the Resource folder.
-    /// </summary>
+    
     void LoadQuestions()
     {
         Object[] objs = Resources.LoadAll("Questions", typeof(Question));
@@ -279,24 +265,18 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    /// <summary>
-    /// Function that is called restart the game.
-    /// </summary>
+    
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    /// <summary>
-    /// Function that is called to quit the application.
-    /// </summary>
+    
     public void QuitGame()
     {
         Application.Quit();
     }
 
-    /// <summary>
-    /// Function that is called to set new highscore if game score is higher.
-    /// </summary>
+   
     private void SetHighscore()
     {
         var highscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
@@ -305,9 +285,7 @@ public class GameManager : MonoBehaviour {
             PlayerPrefs.SetInt(GameUtility.SavePrefKey, events.CurrentFinalScore);
         }
     }
-    /// <summary>
-    /// Function that is called update the score and update the UI.
-    /// </summary>
+        
     private void UpdateScore(int add)
     {
         events.CurrentFinalScore += add;

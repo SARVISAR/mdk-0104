@@ -113,17 +113,13 @@ public class UIManager : MonoBehaviour {
 
     #endregion
 
-    /// <summary>
-    /// Function that is used to update new question UI information.
-    /// </summary>
+    
     void UpdateQuestionUI(Question question)
     {
         uIElements.QuestionInfoTextObject.text = question.Info;
         CreateAnswers(question);
     }
-    /// <summary>
-    /// Function that is used to display resolution screen.
-    /// </summary>
+    
     void DisplayResolution(ResolutionScreenType type, int score)
     {
         UpdateResUI(type, score);
@@ -147,9 +143,7 @@ public class UIManager : MonoBehaviour {
         uIElements.MainCanvasGroup.blocksRaycasts = true;
     }
 
-    /// <summary>
-    /// Function that is used to display resolution UI information.
-    /// </summary>
+   
     void UpdateResUI(ResolutionScreenType type, int score)
     {
         var highscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
@@ -178,9 +172,7 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    /// <summary>
-    /// Function that is used to calculate and display the score.
-    /// </summary>
+    
     IEnumerator CalculateScore()
     {
         var scoreValue = 0;
@@ -193,9 +185,7 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    /// <summary>
-    /// Function that is used to create new question answers.
-    /// </summary>
+    
     void CreateAnswers(Question question)
     {
         EraseAnswers();
@@ -214,9 +204,7 @@ public class UIManager : MonoBehaviour {
             currentAnswers.Add(newAnswer);
         }
     }
-    /// <summary>
-    /// Function that is used to erase current created answers.
-    /// </summary>
+    
     void EraseAnswers()
     {
         foreach (var answer in currentAnswers)
@@ -226,9 +214,7 @@ public class UIManager : MonoBehaviour {
         currentAnswers.Clear();
     }
 
-    /// <summary>
-    /// Function that is used to update score text UI.
-    /// </summary>
+    
     void UpdateScoreUI()
     {
         uIElements.ScoreText.text = "Score: " + events.CurrentFinalScore;
