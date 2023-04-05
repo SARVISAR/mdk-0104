@@ -36,7 +36,9 @@ public class Question : ScriptableObject {
     [SerializeField] private    int         _addScore       = 10;
     public                      int         AddScore        { get { return _addScore; } }
 
-    
+    /// <summary>
+    /// Function that is called to collect and return correct answers indexes.
+    /// </summary>
     public List<int> GetCorrectAnswers ()
     {
         List<int> CorrectAnswers = new List<int>();

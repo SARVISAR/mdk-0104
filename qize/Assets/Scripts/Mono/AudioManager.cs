@@ -86,7 +86,9 @@ public class AudioManager : MonoBehaviour {
 
     #endregion
 
-   
+    /// <summary>
+    /// Function that is called to initializes sounds.
+    /// </summary>
     void InitSounds()
     {
         foreach (var sound in sounds)
@@ -98,7 +100,9 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    
+    /// <summary>
+    /// Function that is called to play a sound.
+    /// </summary>
     public void PlaySound(string name)
     {
         var sound = GetSound(name);
@@ -111,7 +115,9 @@ public class AudioManager : MonoBehaviour {
             Debug.LogWarning("Sound by the name " + name + " is not found! Issues occured at AudioManager.PlaySound()");
         }
     }
-    
+    /// <summary>
+    /// Function that is called to stop a playing sound.
+    /// </summary>
     public void StopSound(string name)
     {
         var sound = GetSound(name);
